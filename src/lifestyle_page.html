@@ -8,6 +8,9 @@
 </head>
 <body>
 
+    
+
+
 <div class="layout">
 
     <!-- LEFT SIDEBAR (SAME AS DASHBOARD) -->
@@ -54,43 +57,45 @@
                     <form id="lifestyleForm">
 
                         <h3>Basic Body Details</h3>
-                        <input type="number" placeholder="Age">
-                        <input type="text" placeholder="Gender">
-                        <input type="text" placeholder="Height">
-                        <input type="text" placeholder="Weight">
-                        <input type="text" placeholder="Body Fat % (Optional)">
-                        <input type="text" placeholder="Current Body Type">
+                        <input id="age" type="number" placeholder="Age">
+                        <input id="gender"type="text" placeholder="Gender">
+                        <input id="height" type="text" placeholder="Height">
+                        <input id="weight" type="text" placeholder="Weight">
+                        <input id="bodytype" type="text" placeholder="Body Type">
+                        <input id="screenTime" type="text" placeholder="Average Screentime ">
+                        
 
                         <h3>Main Goal</h3>
-                        <textarea placeholder="Describe your primary fitness goal..."></textarea>
+                        <textarea id ="goalmain" placeholder="Describe your primary fitness goal..."></textarea>
 
                         <h3>Training Experience</h3>
-                        <select>
+                        <select id="explevel">
                             <option>Beginner</option>
                             <option>Intermediate</option>
                             <option>Advanced</option>
                         </select>
 
                         <h3>Workout Access</h3>
-                        <input type="text" placeholder="Home / Gym / Equipment Available">
+                        <input id="equipment"type="text" placeholder="Home / Gym / Equipment Available">
 
                         <h3>Schedule</h3>
-                        <input type="text" placeholder="Days per week">
-                        <input type="text" placeholder="Minutes per session">
+                        <input id="daysperweek" type="text" placeholder="Days per week">
+                        <input id="minutepersession" type="text" placeholder="Minutes per session">
 
                         <h3>Diet Information</h3>
-                        <input type="text" placeholder="Vegetarian / Non-Vegetarian">
-                        <input type="text" placeholder="Budget Level">
-                        <input type="text" placeholder="Current Protein Intake">
+                        <input id="veg/nonveg" type="text" placeholder="Vegetarian / Non-Vegetarian">
+                        <input id="budgetlevel" type="text" placeholder="Budget Level">
+                        <input id="currproteinintake" type="text" placeholder="Current Protein Intake">
 
                         <h3>Lifestyle Factors</h3>
-                        <input type="text" placeholder="Sleep Hours">
-                        <input type="text" placeholder="Stress Level">
+                        <input id="sleephrs" type="text" placeholder="Sleep Hours">
+                        <input id="stresslevel" type="text" placeholder="Stress Level">
 
                         <h3>Physical Issues</h3>
-                        <textarea placeholder="Any injuries or medical conditions?"></textarea>
+                        <textarea id="injuries" placeholder="Any injuries or medical conditions?"></textarea>
 
-                        <button type="submit">Generate Plan</button>
+                        <button type="button" onclick="saveData()">Generate Plan</button>
+
 
                     </form>
                 </div>
@@ -111,6 +116,7 @@
 
 </div>
 
-<script src="script_lifestyle.js"></script>
+<script src="input.js"></script>
+
 </body>
 </html>
