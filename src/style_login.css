@@ -63,8 +63,15 @@ body {
 
 .logo {
     display: flex;
-    align-items: center;
-    margin-bottom: 40px;
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically */
+    margin-top: 40px;          /* spacing from top */
+}
+
+
+.logo-img {
+    height: 200px;   /* bigger and clear */
+    width: auto;
 }
 
 .logo-icon {
@@ -78,6 +85,8 @@ body {
 .logo h2 {
     color: #1fa88f;
     font-weight: 700;
+    font-size: 50px;
+    margin: 0;
 }
 
 .login-box h3 {
