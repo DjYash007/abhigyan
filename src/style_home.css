@@ -37,7 +37,7 @@ body {
     color: #1b8f5a;
 }
 
-/* Creative Upgrade */
+/* Upgrade Box */
 .upgrade-box {
     background: linear-gradient(135deg, #1b8f5a, #27c17e);
     color: white;
@@ -45,12 +45,7 @@ body {
     border-radius: 15px;
     margin-bottom: 25px;
     text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     animation: float 3s ease-in-out infinite;
-}
-
-.upgrade-box h3 {
-    margin-bottom: 10px;
 }
 
 .upgrade-box button {
@@ -96,7 +91,7 @@ nav a:hover {
     flex-direction: column;
 }
 
-/* SEPARATE HEADER BAR */
+/* HEADER BAR */
 .header-bar {
     height: 80px;
     background: white;
@@ -132,22 +127,33 @@ nav a:hover {
     color: #1b8f5a;
 }
 
+/* Development Buttons */
 .cards {
     display: flex;
     gap: 30px;
     margin-bottom: 50px;
 }
 
-.card {
+.dev-btn {
     background: white;
-    padding: 25px;
-    border-radius: 12px;
-    width: 300px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: none;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
 }
 
-.card h3 {
+.dev-btn h3 {
     color: #1b8f5a;
+    margin-bottom: 10px;
+}
+
+.dev-btn:hover {
+    transform: translateY(-6px);
+    background: #e6f7f0;
 }
 
 /* VIDEOS */
@@ -183,24 +189,33 @@ nav a:hover {
 
 /* RIGHT SIDEBAR */
 .sidebar-right {
-    width: 260px;
+    width: 280px;
     background: white;
     padding: 20px;
     border-left: 1px solid #e0f2e9;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100vh;
 }
 
 .quote {
+    flex: 1;
     background: #e0f7ee;
-    padding: 15px;
-    border-radius: 10px;
-    min-height: 130px;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quote:last-child {
+    margin-bottom: 0;
 }
 
 .typewriter {
-    border-right: 2px solid #1b8f5a;
     white-space: pre-wrap;
-    overflow: hidden;
+    border-right: 2px solid #1b8f5a;
+    padding-right: 5px;
 }
