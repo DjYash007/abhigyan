@@ -12,7 +12,7 @@ document.getElementById("loginBtn").addEventListener("click", async () => {
     localStorage.setItem("userUID", user.uid);
 
     // Redirect to form page
-    window.location.href = "form.html";
+    window.location.href = "home_page.html";
 
   } catch (error) {
     console.error(error);
