@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lifestyle Development - NextYou</title>
+<link rel="stylesheet" href="style_lifestyle.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- LEFT SIDEBAR (SAME AS DASHBOARD) -->
+    <aside class="sidebar-left">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="NextYou Logo">
+            <h2>NextYou</h2>
+        </div>
+
+        <div class="upgrade-box">
+            <h3>🚀 Go Premium</h3>
+            <p>Unlock exclusive growth tools & insights</p>
+            <button>Upgrade Now</button>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Help</a>
+            <a href="#">Progress</a>
+            <a href="#">Settings</a>
+        </nav>
+
+    </aside>
+
+    <!-- MAIN WRAPPER -->
+    <div class="main-wrapper">
+
+        <!-- HEADER BAR -->
+        <div class="header-bar">
+            <h1>Lifestyle Development</h1>
+        </div>
+
+        <!-- MAIN CONTENT SPLIT -->
+        <main class="main">
+
+            <div class="split-container">
+
+                <!-- INPUT SIDE -->
+                <div class="input-section">
+                    <h2>Enter Your Details</h2>
+
+                    <form id="lifestyleForm">
+
+                        <h3>Basic Body Details</h3>
+                        <input type="number" placeholder="Age">
+                        <input type="text" placeholder="Gender">
+                        <input type="text" placeholder="Height">
+                        <input type="text" placeholder="Weight">
+                        <input type="text" placeholder="Body Fat % (Optional)">
+                        <input type="text" placeholder="Current Body Type">
+
+                        <h3>Main Goal</h3>
+                        <textarea placeholder="Describe your primary fitness goal..."></textarea>
+
+                        <h3>Training Experience</h3>
+                        <select>
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+
+                        <h3>Workout Access</h3>
+                        <input type="text" placeholder="Home / Gym / Equipment Available">
+
+                        <h3>Schedule</h3>
+                        <input type="text" placeholder="Days per week">
+                        <input type="text" placeholder="Minutes per session">
+
+                        <h3>Diet Information</h3>
+                        <input type="text" placeholder="Vegetarian / Non-Vegetarian">
+                        <input type="text" placeholder="Budget Level">
+                        <input type="text" placeholder="Current Protein Intake">
+
+                        <h3>Lifestyle Factors</h3>
+                        <input type="text" placeholder="Sleep Hours">
+                        <input type="text" placeholder="Stress Level">
+
+                        <h3>Physical Issues</h3>
+                        <textarea placeholder="Any injuries or medical conditions?"></textarea>
+
+                        <button type="submit">Generate Plan</button>
+
+                    </form>
+                </div>
+
+                <!-- OUTPUT SIDE -->
+                <div class="output-section">
+                    <h2>Your Personalized Plan</h2>
+                    <div id="outputBox">
+                        <p>Your customized workout and diet plan will appear here after submission.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+<script src="script_lifestyle.js"></script>
+</body>
+</html>
