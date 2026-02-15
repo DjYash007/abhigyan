@@ -1,30 +1,33 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
 import {
   getAuth,
   GoogleAuthProvider,
-  signInWithPopup
+  signInWithPopup,
+  onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-// 🔴 PASTE YOUR REAL CONFIG HERE
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import {
+  getDatabase
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCVsqHqUxA-M22n0mhcX5y8zSjqc2H0N2o",
-  authDomain: "nextyou-feeee.firebaseapp.com",
-  projectId: "nextyou-feeee",
-  storageBucket: "nextyou-feeee.firebasestorage.app",
-  messagingSenderId: "897802098138",
-  appId: "1:897802098138:web:7b03179d09ee5809371ce3",
-  measurementId: "G-07FME4E8QE"
+  apiKey: "AIzaSyC7QanMxCuZrxjP1kQ40N2NRe2nD1Vsefo",
+  authDomain: "nextyou1-f174f.firebaseapp.com",
+  databaseURL: "https://nextyou1-f174f-default-rtdb.firebaseio.com",
+  projectId: "nextyou1-f174f",
+  storageBucket: "nextyou1-f174f.firebasestorage.app",
+  messagingSenderId: "891347710844",
+  appId: "1:891347710844:web:b181bb2f18089fe8ce2af9"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Auth setup
-const auth = getAuth(app);
+export const auth = getAuth(app);
+export const database = getDatabase(app); //  THIS WAS MISSING
+
 const provider = new GoogleAuthProvider();
 
-// Export login function
 export async function loginWithGoogle() {
   try {
     const result = await signInWithPopup(auth, provider);
@@ -35,3 +38,5 @@ export async function loginWithGoogle() {
     return null;
   }
 }
+
+export { onAuthStateChanged };
