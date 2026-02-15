@@ -1,21 +1,19 @@
 import { loginWithGoogle } from "./firebase.js";
 
 document.getElementById("loginBtn").addEventListener("click", async () => {
-  try {
-    const user = await loginWithGoogle();
 
-    console.log("Logged in:", user.displayName);
+  const user = await loginWithGoogle();
 
-    // Save user in localStorage (so next pages can access)
-    localStorage.setItem("userName", user.displayName);
-    localStorage.setItem("userEmail", user.email);
-    localStorage.setItem("userUID", user.uid);
-
-    // Redirect to form page
-    window.location.href = "home_page.html";
-
-  } catch (error) {
-    console.error(error);
+  if (!user) {
     alert("Login failed");
+    return;
   }
+
+  console.log("Logged in:", user.displayName);
+
+  localStorage.setItem("userName", user.displayName);
+  localStorage.setItem("userEmail", user.email);
+  localStorage.setItem("userUID", user.uid);
+
+  window.location.href = "home_page.html";
 });
