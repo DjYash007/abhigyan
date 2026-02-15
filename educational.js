@@ -98,7 +98,7 @@ Keep it practical, structured, and motivating.
 `;
 
   try {
-    const API_KEY = "AIzaSyAzOV5mFIaa7s5Wtt1Xsdvpi2Xgqa1jzbI";
+    const API_KEY = "AIzaSyDO59c91nDthPSo3J9dJ9jk9a7kjZLZi7E";
 
     const res = await fetch(
   `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`,

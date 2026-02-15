@@ -14,6 +14,14 @@ Instead of static content, the platform dynamically generates transformation str
 - Encourages discipline
 - Helps users track growth
 
+## 🔮 Future Scope
+
+- Save plan history (Firestore)
+- Progress analytics
+- Habit streak tracking
+- PDF export
+- AI coaching chatbot
+
 ## ❤️ Vision
 
 To help individuals consistently improve through intelligent, personalized, AI-driven growth systems.
