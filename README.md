@@ -1,149 +1,74 @@
-# abhigyan
--- NextYou
+# 🚀 NextYou – AI-Powered Personal Transformation Platform
 
+NextYou is a web application designed to help users become the best version of themselves through personalized AI-generated plans.
 
-A Personalized Self-Development & Progress Tracking Platform
+It provides structured improvement strategies in two key areas:
+- 🧠 Educational Development
+- 💪 Lifestyle Development
 
-NextYou is a structured self-development web platform designed to help individuals transform their lifestyle, education, fitness, and productivity goals into measurable daily action systems.
+Users enter their goals, habits, and constraints, and the system generates a customized roadmap using AI.
 
-Instead of relying on motivation alone, NextYou focuses on clarity, structure, and consistency.
+---
 
--- Overview
+## ✨ Features
 
-Many individuals struggle with:
+- 🔐 Google Authentication (Firebase Auth)
+- 🧠 AI-Powered Personalized Plans (Gemini API)
+- 📊 Progress Tracking Dashboard
+- 🏋️ Lifestyle Transformation Planner
+- 📚 Study Strategy Generator
+- ☁️ Cloud-based deployment (Vercel-ready)
 
-Lack of structured goal planning
+---
 
-Inconsistent progress tracking
+## 🧩 Tech Stack
 
-Poor discipline and follow-through
+- HTML, CSS, JavaScript
+- Firebase Authentication
+- Google Gemini API
+- Chart.js
+- Vercel Deployment
 
-No personalized improvement system
+---
 
-NextYou solves this by converting long-term goals into daily actionable systems with visual tracking and performance insights.
+## 🎯 Problem Statement
 
--- Core Modules
--- Dashboard
+People often know what they want to improve but lack:
+- Structure
+- Consistency
+- Personalization
+- Motivation
 
-Clean green-themed user interface
+NextYou converts personal data into actionable improvement plans using AI.
 
-Personalized growth sections
+---
 
-Motivational quote sidebar
+## 💡 Solution
 
-Curated growth-focused video recommendations
+NextYou collects user inputs such as:
+- Goals
+- Study habits
+- Lifestyle patterns
+- Stress levels
+- Time availability
 
--- Lifestyle Development
+And generates:
+- Daily routines
+- Weekly plans
+- Habit systems
+- Motivation strategies
 
-Collects structured input such as:
+---
 
-Age, gender, body details
 
-Fitness goals (fat loss, muscle gain, etc.)
+## 👥 Team
 
-Training experience
+- Yashvardhan Thorat  
+- Prateek Shanbhag  
+- Prashant Sengar
 
-Workout access
+---
 
-Diet preferences
+## 🛠️ Setup Instructions
 
-Lifestyle and health factors
-
-Based on this input, users receive a structured improvement framework.
-
--- Educational Development
-
-Collects:
-
-Education level and stream
-
-Academic goals
-
-Weak and strong subjects
-
-Daily schedule
-
-Distraction patterns
-
-Long-term career vision
-
-Helps users build a structured study roadmap and improvement plan.
-
--- Progress Tracking System
-
-Monthly habit tracker (tick / untick system)
-
-Missed days highlighted clearly
-
-Performance visualization graph
-
-Completion percentage indicator
-
-Yearly tracking capability
-
-This system encourages discipline and measurable growth.
-
--- Tech Stack
-
-HTML5
-
-CSS3
-
-JavaScript (Vanilla JS)
-
-Responsive layout structure
-
-Custom animations and UI components
-
--- Key Features
-
-Structured goal input forms
-
-Visual monthly progress tracker
-
-Performance analytics
-
-Completion percentage calculation
-
-Clean modern UI design
-
-Motivation-driven sidebar
-
-Modular multi-page layout
-
--- Target Audience
-
-Students preparing for exams
-
-Competitive exam aspirants
-
-Fitness enthusiasts
-
-Habit builders
-
-Individuals focused on self-improvement
-
--- Future Improvements
-
-Backend integration for user accounts
-
-Data persistence
-
-AI-based personalized plan generation
-
-Authentication system
-
-Cloud database integration
-
-Mobile optimization
-
--- Philosophy
-
-Most people fail not because of lack of ambition, but because of lack of structure.
-
-NextYou bridges that gap by turning ambition into disciplined daily systems.
-
--- Developed By
-
-Team BugSlayers
-Hackathon Project – NextYou
+1. Clone the repo
