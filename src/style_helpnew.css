@@ -1,3 +1,4 @@
+/* Keep theme same */
 * {
     margin: 0;
     padding: 0;
@@ -29,13 +30,8 @@ body {
     margin-bottom: 20px;
 }
 
-.logo img {
-    height: 35px;
-}
-
-.logo h2 {
-    color: #1b8f5a;
-}
+.logo img { height: 35px; }
+.logo h2 { color: #1b8f5a; }
 
 .upgrade-box {
     background: linear-gradient(135deg, #1b8f5a, #27c17e);
@@ -43,6 +39,11 @@ body {
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 25px;
+    transition: transform 0.3s;
+}
+
+.upgrade-box:hover {
+    transform: scale(1.05);
 }
 
 .upgrade-box button {
@@ -62,18 +63,13 @@ nav a {
     text-decoration: none;
     color: #333;
     border-radius: 6px;
+    transition: 0.3s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     background: #e0f7ee;
     color: #1b8f5a;
-}
-
-/* MAIN WRAPPER */
-.main-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
 }
 
 /* HEADER */
@@ -89,44 +85,87 @@ nav a:hover {
 
 .header-bar h1 {
     color: #1b8f5a;
-    margin: 0;   /* IMPORTANT FIX */
-    font-size: 36px;
 }
 
-/* MAIN CONTENT */
+.profile {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* MAIN */
 .main {
     padding: 50px;
 }
 
-.about-container {
+.help-container {
     background: white;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    animation: fadeIn 0.8s ease;
 }
 
-.about-container h2 {
+.help-container h2 {
     color: #1b8f5a;
     margin-bottom: 20px;
 }
 
-.about-container h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #1b8f5a;
+/* STEPS */
+.steps {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
-.about-container p {
-    line-height: 1.6;
-    margin-bottom: 10px;
+.step-card {
+    flex: 1;
+    background: #e0f7ee;
+    padding: 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-.about-container ul {
-    margin-left: 20px;
+.step-card span {
+    display: inline-block;
+    background: #1b8f5a;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-.about-container li {
-    margin-bottom: 8px;
+.step-card:hover {
+    transform: translateY(-5px);
+}
+
+/* FAQ */
+.faq-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 15px;
+    background: #e0f7ee;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.faq-question:hover {
+    background: #c9f1df;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    padding: 0 15px;
+    transition: max-height 0.4s ease;
 }
 
 /* RIGHT SIDEBAR */
@@ -137,7 +176,6 @@ nav a:hover {
     border-left: 1px solid #e0f2e9;
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 .quote {
@@ -152,12 +190,14 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.quote:last-child {
-    margin-bottom: 0;
-}
-
 .typewriter {
     white-space: pre-wrap;
     border-right: 2px solid #1b8f5a;
     padding-right: 5px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }

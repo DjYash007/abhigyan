@@ -25,11 +25,10 @@
         </div>
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Help</a>
+            <a href="home_page.html">Home</a>
+            <a href="aboutnew.html">About</a>
+            <a href="helpnew.html">Help</a>
             <a href="#">Progress</a>
-            <a href="#">Settings</a>
         </nav>
 
     </aside>
@@ -54,41 +53,44 @@
                     <form id="eduForm">
 
                         <h3>Basic Details</h3>
-                        <input type="number" placeholder="Age">
-                        <input type="text" placeholder="Current Education Level">
-                        <input type="text" placeholder="Stream / Branch">
-                        <input type="text" placeholder="Year / Semester">
+                        <input id="age" type="number" placeholder="Age">
+                        <input id="educationLevel" type="text" placeholder="Current Education Level">
+                        <input id="branch" type="text" placeholder="Stream / Branch">
+                        <input id="semester" type="text" placeholder="Year / Semester">
 
                         <h3>Main Goal</h3>
-                        <textarea placeholder="Describe your main academic goal clearly..."></textarea>
+                        <textarea id="goal"></textarea>
 
                         <h3>Subjects & Weak Areas</h3>
-                        <textarea placeholder="List all subjects..."></textarea>
-                        <input type="text" placeholder="Weak Subjects">
-                        <input type="text" placeholder="Strong Subjects">
-                        <input type="text" placeholder="Theory-heavy or Problem-solving heavy?">
+                        <textarea id="subjects"></textarea>
+                        <input id="weak" type="text" placeholder="Weak Subjects">
+                        <input id="strong" type="text" placeholder="Strong Subjects">
+
 
                         <h3>Daily Schedule</h3>
-                        <input type="text" placeholder="Wake up time">
-                        <input type="text" placeholder="College/School Timing">
-                        <input type="text" placeholder="Free hours per day">
-                        <input type="text" placeholder="Tuition/Coaching Details">
+                        <h3>Daily Schedule</h3>
+                        <input id="wakeTime" type="text" placeholder="Wake up time">
+                        <input id="collegeTime" type="text" placeholder="College/School Timing">
+                        <input id="freeHours" type="text" placeholder="Free hours per day">
+                        <input id="tuition" type="text" placeholder="Tuition/Coaching Details">
+
 
                         <h3>Study Environment</h3>
-                        <input type="text" placeholder="Home or Library?">
-                        <input type="text" placeholder="Biggest Distraction">
+                        <input id="environ" type="text" placeholder="Home/Library?">
+                    
 
                         <h3>Current Problems</h3>
                         <textarea placeholder="Procrastination? Burnout? Low confidence?"></textarea>
 
                         <h3>Lifestyle Details</h3>
-                        <input type="text" placeholder="Sleep Hours">
-                        <input type="text" placeholder="Exercise?">
-                        <input type="text" placeholder="Stress Level">
-                        <input type="text" placeholder="Social Media Usage per day">
+                        <input id="sleep" type="text" placeholder="Sleep Hours">
+                        <input id="exercise" type="text" placeholder="Exercise?">
+                        <input id="stress" type="text" placeholder="Stress Level">
+                        <input id="social" type="text" placeholder="Social Media Usage per day">
 
                         <h3>Long-Term Vision</h3>
-                        <textarea placeholder="Higher studies? Govt job? Abroad? Business?"></textarea>
+                        <textarea id="vision" placeholder="Higher studies? Govt job? Abroad? Business?"></textarea>
+
 
                         <button type="submit">Generate Study Plan</button>
 

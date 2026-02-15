@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progress - NextYou</title>
+<link rel="stylesheet" href="style_progress.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <div class="logo">
+        <img src="images/logo.png">
+        <h2>NextYou</h2>
+    </div>
+
+    <div class="upgrade-box">
+        <h3>Go Premium 🚀</h3>
+        <p>Unlock exclusive growth tools & insights</p>
+        <button class="upgrade-btn">Upgrade Now</button>
+    </div>
+
+    <nav>
+        <a href="home_page.html">Home</a>
+        <a href="aboutnew.html">About</a>
+        <a href="helpnew.html">Help</a>
+        <a href="progress.html" class="active">Progress</a>
+    </nav>
+</aside>
+
+<!-- MAIN -->
+<div class="main">
+
+    <div class="top-bar">
+        <h1>Your Progress</h1>
+        <div class="profile">
+            <span>Welcome Back 👋</span>
+            <img src="https://i.pravatar.cc/45">
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- TRACKER -->
+        <div class="card">
+            <div class="tracker-header">
+                <h2>Yearly Tracker</h2>
+
+                <select id="monthSelect"></select>
+            </div>
+
+            <div class="calendar" id="calendar"></div>
+        </div>
+
+        <!-- GRAPH -->
+        <div class="card">
+            <h2>Monthly Performance</h2>
+            <canvas id="progressChart"></canvas>
+        </div>
+
+        <!-- PERCENT -->
+        <div class="card center">
+            <h2>Completion Rate</h2>
+
+            <div class="circle">
+                <svg width="180" height="180">
+                    <circle class="bg" cx="90" cy="90" r="75"/>
+                    <circle class="progress" cx="90" cy="90" r="75"/>
+                </svg>
+                <div id="percentageText">0%</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="script_progress.js"></script>
+</body>
+</html>
