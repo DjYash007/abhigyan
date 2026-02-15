@@ -10,6 +10,7 @@ document.getElementById("loginBtn").addEventListener("click", async () => {
     localStorage.setItem("userName", user.displayName);
     localStorage.setItem("userEmail", user.email);
     localStorage.setItem("userUID", user.uid);
+    localStorage.setItem("userPhoto", user.photoURL);
 
     // Redirect to form page
     window.location.href = "home_page.html";
