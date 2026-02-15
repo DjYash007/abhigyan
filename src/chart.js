@@ -1,4 +1,4 @@
-// 🔥 Firebase Imports
+// Firebase Imports
 import { auth, database, onAuthStateChanged } from "./firebase.js";
 import { ref, set, get } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
@@ -21,7 +21,7 @@ onAuthStateChanged(auth, (user) => {
 //   get 
 // } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
 
-// 🔥 Firebase Config
+//  Firebase Config
 // const firebaseConfig = {
 //     apiKey: "AIzaSyC7QanMxCuZrxjP1kQ40N2NRe2nD1Vsefo",
 //     authDomain: "nextyou1-f174f.firebaseapp.com",
@@ -32,11 +32,11 @@ onAuthStateChanged(auth, (user) => {
 //     appId: "1:891347710844:web:b181bb2f18089fe8ce2af9"
 // };
 // const firebaseConfig = { apiKey: "AIzaSyC7QanMxCuZrxjP1kQ40N2NRe2nD1Vsefo", authDomain: "nextyou1-f174f.firebaseapp.com", databaseURL: "https://nextyou1-f174f-default-rtdb.firebaseio.com", projectId: "nextyou1-f174f", storageBucket: "nextyou1-f174f.firebasestorage.app", messagingSenderId: "891347710844", appId: "1:891347710844:web:b181bb2f18089fe8ce2af9" };
-// // 🔥 Initialize Firebase
+// //  Initialize Firebase
 // const app = initializeApp(firebaseConfig);
 // const database = getDatabase(app);
 
-// 🔥 TEMP USER (Later replace with auth UID)
+// TEMP USER (Later replace with auth UID)
 //const userId = "demoUser";
 
 // DOM Elements
@@ -65,7 +65,7 @@ function getDaysInMonth(month){
     return new Date(2024, month+1, 0).getDate();
 }
 
-// 🔥 Load Data from Firebase
+// Load Data from Firebase
 async function getData(month){
 
     if (!currentUser) return [];
@@ -91,7 +91,7 @@ function saveData(month,data){
 
 let chart;
 
-// 🔥 Main Render Function
+//  Main Render Function
 async function render(){
     if (!currentUser) {
         console.log("User not ready yet");
@@ -126,7 +126,7 @@ async function render(){
     updateCircle(data);
 }
 
-// 🔥 Update Chart
+//  Update Chart
 function updateGraph(data){
     const ctx=document.getElementById("progressChart");
 
@@ -156,7 +156,7 @@ function updateGraph(data){
     });
 }
 
-// 🔥 Update Percentage Circle
+// Update Percentage Circle
 function updateCircle(data){
     const completed=data.filter(v=>v===1).length;
     const percentage=Math.round((completed/data.length)*100);
