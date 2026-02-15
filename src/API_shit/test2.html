@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educational Development - NextYou</title>
+<link rel="stylesheet" href="style_educational.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- LEFT SIDEBAR (SAME) -->
+    <aside class="sidebar-left">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="NextYou Logo">
+            <h2>NextYou</h2>
+        </div>
+
+        <div class="upgrade-box">
+            <h3>🚀 Go Premium</h3>
+            <p>Unlock exclusive growth tools & insights</p>
+            <button>Upgrade Now</button>
+        </div>
+
+        <nav>
+            <a href="home_page.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="helpnew.html">Help</a>
+            <a href="#">Progress</a>
+        </nav>
+
+    </aside>
+
+    <!-- MAIN WRAPPER -->
+    <div class="main-wrapper">
+
+        <!-- HEADER -->
+        <div class="header-bar">
+            <h1>Educational Development</h1>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+
+            <div class="split-container">
+
+                <!-- INPUT SECTION -->
+                <div class="input-section">
+                    <h2>Enter Your Academic Details</h2>
+
+                    <form id="eduForm">
+
+                        <h3>Basic Details</h3>
+                        <input id="age" type="number" placeholder="Age">
+                        <input id="educationLevel" type="text" placeholder="Current Education Level">
+                        <input id="branch" type="text" placeholder="Stream / Branch">
+                        <input id="semester" type="text" placeholder="Year / Semester">
+
+                        <h3>Main Goal</h3>
+                        <textarea id="goal"></textarea>
+
+                        <h3>Subjects & Weak Areas</h3>
+                        <textarea id="subjects"></textarea>
+                        <input id="weak" type="text" placeholder="Weak Subjects">
+                        <input id="strong" type="text" placeholder="Strong Subjects">
+
+
+                        <h3>Daily Schedule</h3>
+                        <h3>Daily Schedule</h3>
+                        <input id="wakeTime" type="text" placeholder="Wake up time">
+                        <input id="collegeTime" type="text" placeholder="College/School Timing">
+                        <input id="freeHours" type="text" placeholder="Free hours per day">
+                        <input id="tuition" type="text" placeholder="Tuition/Coaching Details">
+
+
+                        <h3>Study Environment</h3>
+                        <input id="environ" type="text" placeholder="Home/Library?">
+                    
+
+                        <h3>Current Problems</h3>
+                        <textarea placeholder="Procrastination? Burnout? Low confidence?"></textarea>
+
+                        <h3>Lifestyle Details</h3>
+                        <input id="sleep" type="text" placeholder="Sleep Hours">
+                        <input id="exercise" type="text" placeholder="Exercise?">
+                        <input id="stress" type="text" placeholder="Stress Level">
+                        <input id="social" type="text" placeholder="Social Media Usage per day">
+
+                        <h3>Long-Term Vision</h3>
+                        <textarea id="vision" placeholder="Higher studies? Govt job? Abroad? Business?"></textarea>
+
+
+                        <button type="button" onclick="saveEduData()">Generate Study Plan</button>
+
+                    </form>
+                </div>
+
+                <!-- OUTPUT SECTION -->
+                <div class="output-section">
+                    <h2>Your Personalized Study Plan</h2>
+                    <div id="outputBox">
+                        <p>Your customized study routine and improvement plan will appear here.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+<script src="educational.js"></script>
+</body>
+</html>
