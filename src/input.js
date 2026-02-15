@@ -34,30 +34,30 @@ Workout Days per Week: ${days}
 Session Duration: ${minutes} minutes
 Sleep Hours: ${sleep}
 Stress Level: ${stress}
-Injuries/Issues: ${injury}
+
 
 REQUIREMENTS:
 
 Create a structured plan with these sections:
 
-1️⃣ WORKOUT PLAN
+1 WORKOUT PLAN
 - Weekly structure
 - Beginner-friendly progression
 - Rest & recovery advice
 
-2️⃣ DIET GUIDANCE
+2 DIET GUIDANCE
 - Protein focus
 - Simple practical suggestions
 
-3️⃣ DAILY ROUTINE
+3 DAILY ROUTINE
 - Morning → Evening flow
 - Habit stacking
 
-4️⃣ HABIT CHANGES
+4 HABIT CHANGES
 - Reduce screen time
 - Improve discipline
 
-5️⃣ MINDSET & MOTIVATION
+5 MINDSET & MOTIVATION
 - Consistency strategy
 
 Keep it practical, structured, and motivating.
