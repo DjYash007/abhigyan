@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/logo.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NextYou Dashboard</title>
@@ -27,7 +28,7 @@
 
         <nav>
             <a href="home_page.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="aboutnew.html">About</a>
             <a href="helpnew.html">Help</a>
             <a href="progress.html">Progress</a>
         </nav>
@@ -41,8 +42,10 @@
         <div class="header-bar">
             <h1>Dashboard</h1>
             <div class="profile-section">
-                <span>Welcome Back 👋</span>
-                <img src="https://i.pravatar.cc/45" class="profile">
+                <span id="welcomeText">
+                <span class="hi-text">Welcome</span> 
+                </span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnB47ekNorYZKibJDsMqqpcsdzuvCv8XAqnw&s" class="profile">
             </div>
         </div>
 
@@ -53,12 +56,12 @@
 
             <div class="cards">
 
-                <button class="dev-btn">
+                <button class="dev-btn" onclick="window.location.href='lifestyle_page.html'">
                     <h3>Lifestyle Development</h3>
                     <p>"Optimize your lifestyle by addressing your specific challenges."</p>
                 </button>
 
-                <button class="dev-btn">
+                <button class="dev-btn" onclick="window.location.href='educational_page.html'">
                     <h3>Educational Development</h3>
                     <p>"Elevate your mindset to unlock a more fulfilling life."</p>
                 </button>

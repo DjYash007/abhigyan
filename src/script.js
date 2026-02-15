@@ -11,9 +11,16 @@ document.getElementById("loginBtn").addEventListener("click", async () => {
 
   console.log("Logged in:", user.displayName);
 
-  localStorage.setItem("userName", user.displayName);
-  localStorage.setItem("userEmail", user.email);
-  localStorage.setItem("userUID", user.uid);
+    // Save user in localStorage (so next pages can access)
+    localStorage.setItem("userName", user.displayName);
+    localStorage.setItem("userEmail", user.email);
+    localStorage.setItem("userUID", user.uid);
 
-  window.location.href = "home_page.html";
+    // Redirect to form page
+    window.location.href = "home_page.html";
+
+  } catch (error) {
+    console.error(error);
+    alert("Login failed");
+  }
 });
