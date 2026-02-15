@@ -16,29 +16,54 @@ async function saveData() {
 
   // Build a strong prompt
   const prompt = `
-You are an expert lifestyle and fitness coach.
+You are an elite lifestyle transformation coach, fitness planner, and habit expert.
 
-Create a personalized ${days}-day transformation plan.
+Create a highly personalized and realistic improvement plan.
 
-User details:
-- Age: ${age}
-- Gender: ${gender}
-- Height: ${height}
-- Weight: ${weight}
-- Goal: ${goal}
-- Experience: ${experience}
-- Workout time: ${minutes} minutes/session
-- Sleep: ${sleep} hours
-- Stress: ${stress}
+USER PROFILE:
+Age: ${age}
+Gender: ${gender}
+Height: ${height}
+Weight: ${weight}
+Body Type: ${bodytype}
+Screen Time: ${screenTime}
+Main Goal: ${goal}
+Experience Level: ${experience}
+Workout Access: ${equipment}
+Workout Days per Week: ${days}
+Session Duration: ${minutes} minutes
+Sleep Hours: ${sleep}
+Stress Level: ${stress}
 
-Give:
-1) Weekly workout plan
-2) Daily routine
-3) Diet suggestions
-4) Habit changes
-5) Motivation tips
-Keep it structured and practical.
+
+REQUIREMENTS:
+
+Create a structured plan with these sections:
+
+1 WORKOUT PLAN
+- Weekly structure
+- Beginner-friendly progression
+- Rest & recovery advice
+
+2 DIET GUIDANCE
+- Protein focus
+- Simple practical suggestions
+
+3 DAILY ROUTINE
+- Morning → Evening flow
+- Habit stacking
+
+4 HABIT CHANGES
+- Reduce screen time
+- Improve discipline
+
+5 MINDSET & MOTIVATION
+- Consistency strategy
+
+Keep it practical, structured, and motivating.
+Avoid generic advice.
 `;
+
 
   try {
     const API_KEY = "AIzaSyAzOV5mFIaa7s5Wtt1Xsdvpi2Xgqa1jzbI";
